@@ -1,9 +1,12 @@
 package com.example.productorderservice.product;
 
+import org.springframework.stereotype.Component;
+
+@Component
 class ProductService {
     private final ProductPort productPort;
 
-    ProductService(ProductPort productPort) {
+    ProductService(final ProductPort productPort) {
         this.productPort = productPort;
     }
 
