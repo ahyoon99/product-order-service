@@ -7,10 +7,10 @@ import java.util.Map;
 
 @Repository
 class ProductRepository {
-    private long sequence = 0L;
+    private Long sequence = 0L;
     private Map<Long, Product> persistence = new HashMap<>();
 
-    public void save(Product product) {
+    public void save(final Product product) {
         product.assignId(++sequence);
         persistence.put(product.getId(), product);
     }
