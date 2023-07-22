@@ -27,4 +27,15 @@ class ProductApiTest extends ApiTest{
         return productSteps.상품등록요청(request);
     }
 
+     @Test
+     void 상품조회() {
+         ProductSteps.상품등록요청(ProductSteps.상품등록요청_생성());
+         Long productId = 1L;
+
+         final var response = productSteps.상품조회요청(productId);
+
+         assertThat(response.statusCode()).isEqualTo(HttpStatus.OK.value());
+         assertThat(response.jsonPath().getString("name")).isEqualTo("상품명");
+     }
+
  }
