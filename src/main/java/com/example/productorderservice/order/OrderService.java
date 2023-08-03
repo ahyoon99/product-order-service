@@ -1,6 +1,7 @@
 package com.example.productorderservice.order;
 
 import com.example.productorderservice.product.Product;
+import jakarta.transaction.Transactional;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/orders")
+public
 class OrderService {
     private final OrderPort orderPort;
 
@@ -19,6 +21,7 @@ class OrderService {
     }
 
     @PostMapping()
+    @Transactional
     public ResponseEntity<Void> createOrder(@RequestBody final CreateOrderRequest request) {
         final Product product = orderPort.getProductById(request.productId());
 
