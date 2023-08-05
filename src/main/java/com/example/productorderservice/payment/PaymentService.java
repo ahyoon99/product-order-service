@@ -1,6 +1,7 @@
 package com.example.productorderservice.payment;
 
 import com.example.productorderservice.order.Order;
+import jakarta.transaction.Transactional;
 import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,7 @@ class PaymentService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> payment(@RequestBody final PaymentRequest request) {
         final Order order = paymentPort.getOrder(request.orderId());
 
