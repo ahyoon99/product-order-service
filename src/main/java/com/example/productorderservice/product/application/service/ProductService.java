@@ -1,10 +1,10 @@
-package com.example.productorderservice.product;
+package com.example.productorderservice.product.application.service;
 
+import com.example.productorderservice.product.application.port.ProductPort;
+import com.example.productorderservice.product.domain.Product;
 import jakarta.transaction.Transactional;
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

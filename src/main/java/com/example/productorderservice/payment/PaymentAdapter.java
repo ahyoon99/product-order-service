@@ -2,8 +2,6 @@ package com.example.productorderservice.payment;
 
 import com.example.productorderservice.order.Order;
 import com.example.productorderservice.order.OrderRepository;
-import com.example.productorderservice.product.DiscountPolicy;
-import com.example.productorderservice.product.Product;
 import org.springframework.stereotype.Component;
 
 @Component

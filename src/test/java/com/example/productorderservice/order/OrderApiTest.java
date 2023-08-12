@@ -1,19 +1,9 @@
 package com.example.productorderservice.order;
 
 import com.example.productorderservice.ApiTest;
-import com.example.productorderservice.product.DiscountPolicy;
-import com.example.productorderservice.product.Product;
-import com.example.productorderservice.product.ProductService;
 import com.example.productorderservice.product.ProductSteps;
-import io.restassured.RestAssured;
-import io.restassured.response.ExtractableResponse;
-import io.restassured.response.Response;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

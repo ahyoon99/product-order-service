@@ -1,5 +1,6 @@
-package com.example.productorderservice.product;
+package com.example.productorderservice.product.domain;
 
+import com.example.productorderservice.product.domain.DiscountPolicy;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
