@@ -1,4 +1,4 @@
-package com.example.productorderservice.payment;
+package com.example.productorderservice.payment.domain;
 
 import com.example.productorderservice.order.Order;
 import jakarta.persistence.*;
@@ -11,6 +11,7 @@ import org.springframework.util.Assert;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "payments")
+public
 class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
