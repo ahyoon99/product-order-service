@@ -1,6 +1,6 @@
 package com.example.productorderservice.payment.domain;
 
-import com.example.productorderservice.order.Order;
+import com.example.productorderservice.order.domain.Order;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

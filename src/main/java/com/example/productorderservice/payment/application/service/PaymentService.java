@@ -1,6 +1,6 @@
 package com.example.productorderservice.payment.application.service;
 
-import com.example.productorderservice.order.Order;
+import com.example.productorderservice.order.domain.Order;
 import com.example.productorderservice.payment.application.port.PaymentPort;
 import com.example.productorderservice.payment.domain.Payment;
 import jakarta.transaction.Transactional;
